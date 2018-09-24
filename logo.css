@@ -1,0 +1,21 @@
+.logo {
+  font-size: 62.5%;
+}
+
+.logo h1 {
+  font-family: "synopsis";
+}
+
+.logo .tagline {
+  font-family: "ploni";
+  font-feature-settings: "kern";
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #5c5858;
+  margin: 1.28em 0.5em 0 0;
+  display: block;
+  float: right;
+  line-height: 0.99em;
+  font-size: 1.13em;
+}

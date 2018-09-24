@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "synopsis";
+  /* only for development use */
+  src: url("./synopsis-demibold-aaa.woff") format("woff");
+  /* src: url("https://alefalefalef.co.il/wp-content/fonts/synopsis/synopsis-demibold-aaa.woff")
+    format("woff"); */
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ploni";
+  /* only for development use */
+  src: url("./ploni-regular-aaa.woff2") format("woff2");
+  /* src: url("https://alefalefalef.co.il/wp-content/fonts/ploni/ploni-regular-aaa.woff2")
+    format("woff2"); */
+  font-weight: 500;
+  font-style: normal;
+}

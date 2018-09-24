@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="reset.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="logo.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="spinning-top.css" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+    <div class="logo container">
+        <div class="head">
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+        </div>
+        <div class="octagonal-prism">
+            <div class="top">
+                <div class="face"></div>
+                <div class="face"></div>
+                <div class="face"></div>
+                <div class="face"></div>
+            </div>
+            <div class="sides">
+                <h1 class="face">א</h1>
+                <h1 class="face">א</h1>
+                <h1 class="face">א</h1>
+                <h1 class="face">א</h1>
+                <h1 class="face">א</h1>
+                <h1 class="face">א</h1>
+                <h1 class="face">א</h1>
+                <h1 class="face">א</h1>
+            </div>
+            <div class="bottom">
+                <div class="face"></div>
+                <div class="face"></div>
+                <div class="face"></div>
+                <div class="face"></div>
+            </div>
+        </div>
+        <div class="octagonal-pyramid">
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+            <div class="face"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="logo.js"></script>
+    <script>
+        let x = 50;
+        let y = 25;
+        const el = document.querySelector('.container');
+        const { height, width } = document.body.getBoundingClientRect();
+        document.body.addEventListener('mousemove', (e) => {
+            if (e.buttons === 1) {
+                x += e.movementX / width * 360;
+                y += e.movementY / height * 360;
+                el.style.transform = `rotateX(${x}deg) rotateY(${y}deg)`;
+            }
+        })
+    </script>
+</body>
+
+</html>

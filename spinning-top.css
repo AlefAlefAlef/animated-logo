@@ -1,0 +1,180 @@
+body {
+  margin: 32px;
+}
+
+.container {
+  transform-style: preserve-3d;
+  transform: rotateX(90deg) rotateZ(0deg) translateX(-90px) rotateY(5deg);
+  position: relative;
+  top: 32px;
+  transform-origin: bottom center;
+}
+
+.container:hover {
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(90deg) rotateZ(0deg) translateX(-90px) rotateY(5deg);
+  }
+  50% {
+    transform: rotateX(90deg) rotateZ(180deg) translateX(-90px) rotateY(5deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateZ(360deg) translateX(-90px) rotateY(5deg);
+  }
+}
+
+.head {
+  transform: translateZ(30px) translateY(32px) translateX(-13px) rotateX(90deg);
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.head .face {
+  width: 12px;
+  height: 24px;
+  background: #ef3e33;
+  transform-origin: center;
+  position: absolute;
+}
+
+.head .face:nth-child(5),
+.head .face:nth-child(6) {
+  height: 12px;
+}
+
+.head .face:nth-child(1) {
+  transform: rotateY(0deg) translateZ(6px); /* x0.5 */
+}
+.head .face:nth-child(2) {
+  transform: rotateY(180deg) translateZ(6px); /* x0.5 */
+}
+.head .face:nth-child(3) {
+  transform: rotateY(90deg) translateZ(6px); /* x0.5 */
+}
+.head .face:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(6px); /* x0.5 */
+}
+.head .face:nth-child(5) {
+  transform: rotateX(90deg) translateZ(6px); /* x0.5 */
+}
+.head .face:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(6px); /* x0.5 */
+}
+
+.octagonal-prism {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateX(-2px) translateY(-28px);
+}
+
+.octagonal-prism .top .face,
+.octagonal-prism .bottom .face {
+  position: absolute;
+  width: 37px;
+  height: 89px;
+  background: #ef3e33;
+  transform: translateX(90deg);
+}
+
+.octagonal-prism .top {
+  transform: translateY(17px) translateX(2px) translateZ(29.5px);
+}
+
+.octagonal-prism .bottom {
+  transform: translateY(17px) translateX(2px) translateZ(-30.5px);
+}
+
+.octagonal-prism .top .face:nth-child(2),
+.octagonal-prism .bottom .face:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.octagonal-prism .top .face:nth-child(3),
+.octagonal-prism .bottom .face:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.octagonal-prism .top .face:nth-child(4),
+.octagonal-prism .bottom .face:nth-child(4) {
+  transform: rotate(135deg);
+}
+
+.octagonal-prism .sides .face {
+  width: 35px; /* x1 */
+  height: 60px; /* x1 */
+  background: #ef3e33;
+  color: white;
+  position: absolute;
+  text-align: center;
+  line-height: 60px;
+  font-size: 48px;
+}
+
+.octagonal-prism .sides .face:nth-of-type(1) {
+  transform: rotateX(-90deg) rotateY(0deg) translateZ(44px); /* x1.25 */
+}
+.octagonal-prism .sides .face:nth-of-type(2) {
+  transform: rotateX(-90deg) rotateY(45deg) translateZ(44px); /* x1.25 */
+}
+.octagonal-prism .sides .face:nth-of-type(3) {
+  transform: rotateX(-90deg) rotateY(90deg) translateZ(44px); /* x1.25 */
+}
+.octagonal-prism .sides .face:nth-of-type(4) {
+  transform: rotateX(-90deg) rotateY(135deg) translateZ(44px); /* x1.25 */
+}
+.octagonal-prism .sides .face:nth-of-type(5) {
+  transform: rotateX(-90deg) rotateY(180deg) translateZ(44px); /* x1.25 */
+}
+.octagonal-prism .sides .face:nth-of-type(6) {
+  transform: rotateX(-90deg) rotateY(225deg) translateZ(44px); /* x1.25 */
+}
+.octagonal-prism .sides .face:nth-of-type(7) {
+  transform: rotateX(-90deg) rotateY(270deg) translateZ(44px); /* x1.25 */
+}
+.octagonal-prism .sides .face:nth-of-type(8) {
+  transform: rotateX(-90deg) rotateY(315deg) translateZ(44px); /* x1.25 */
+}
+
+.octagonal-pyramid {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-30px) translateY(-16.5px) translateX(-0.5px);
+}
+
+.octagonal-pyramid .face {
+  width: 0;
+  height: 0;
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+  border-bottom: calc(45px + 5px) solid #ef3e33;
+  position: absolute;
+  transform-origin: 50% 100%;
+}
+
+.octagonal-pyramid .face:nth-of-type(1) {
+  transform: rotate(0deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
+.octagonal-pyramid .face:nth-of-type(2) {
+  transform: rotate(45deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
+.octagonal-pyramid .face:nth-of-type(3) {
+  transform: rotate(90deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
+.octagonal-pyramid .face:nth-of-type(4) {
+  transform: rotate(135deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
+.octagonal-pyramid .face:nth-of-type(5) {
+  transform: rotate(180deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
+.octagonal-pyramid .face:nth-of-type(6) {
+  transform: rotate(225deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
+.octagonal-pyramid .face:nth-of-type(7) {
+  transform: rotate(270deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
+.octagonal-pyramid .face:nth-of-type(8) {
+  transform: rotate(315deg) translateY(calc(100% - 5px)) rotateX(25deg);
+}
