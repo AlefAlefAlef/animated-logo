@@ -2,12 +2,21 @@ body {
   margin: 32px;
 }
 
+.background {
+  background: blue;
+  display: inline-block;
+}
+
 .container {
+  width: 92px;
+  height: 92px;
   transform-style: preserve-3d;
-  transform: rotateX(90deg) rotateZ(0deg) translateX(-90px) rotateY(5deg);
+  /* transform: rotateX(90deg) rotateZ(0deg) translateX(-90px) rotateY(5deg); */
+  transform: rotateX(90deg) translateZ(47px);
   position: relative;
-  top: 32px;
-  transform-origin: bottom center;
+  transform-origin: center bottom;
+  padding: 13px 26px 0 0;
+  box-sizing: border-box;
 }
 
 .container:hover {
@@ -16,13 +25,13 @@ body {
 
 @keyframes rotate {
   0% {
-    transform: rotateX(90deg) rotateZ(0deg) translateX(-90px) rotateY(5deg);
+    transform: rotateX(90deg) translateZ(47px) rotateZ(0deg) rotateY(5deg);
   }
   50% {
-    transform: rotateX(90deg) rotateZ(180deg) translateX(-90px) rotateY(5deg);
+    transform: rotateX(90deg) translateZ(47px) rotateZ(180deg) rotateY(5deg);
   }
   100% {
-    transform: rotateX(90deg) rotateZ(360deg) translateX(-90px) rotateY(5deg);
+    transform: rotateX(90deg) translateZ(47px) rotateZ(360deg) rotateY(5deg);
   }
 }
 
