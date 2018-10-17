@@ -2,15 +2,15 @@
 /* based on https://desandro.github.io/3dtransforms/docs/cube.html */
 
 .logo h1 {
-  width: 35px; /* x1 */
-  height: 35px; /* x1 */
+  width: 3.6em; /* x1 */
+  height: 3.6em; /* x1 */
   position: relative;
   margin: 11.14px; /* :π */
-  display: block;
   transform-origin: center;
   -ms-transform-origin: center;
   -webkit-transform-origin: center;
-  float: right;
+  font-size: 1.8em; /* scale the cube size up */
+  /* transform: scale(0.8);  */ /* scale the cube down */
 }
 
 .logo h1 a {
@@ -22,54 +22,56 @@
   -webkit-transform-style: preserve-3d;
   transition: transform 0.4s;
   -webkit-transition: transform 0.4s;
+  font-size: 3.75em;
 }
 
 .logo h1 a span {
-  margin: 0;
   width: 100%;
   height: 100%;
   position: absolute;
-  font-size: 35px; /* x1 */
   background: white;
   text-align: center;
   display: block;
+  border-radius: .034em;
 }
 
 .logo h1 a span b {
-  width: calc(93%);
-  height: calc(93%);
-  background: #ef3e33;
+  width: calc(92%);
+  height: calc(92%);
+  background: #e43;
   color: white;
   display: block;
   position: absolute;
   font-weight: 600;
-  top: 3.5%;
-  left: 3.5%;
+  top: 4%;
+  left: 4%;
+  line-height: 1.1em;
+  font-size: 0.9em;
 }
 
 .logo h1 a span:nth-child(1) {
-  transform: rotateY(0deg) translateZ(17.5px); /* x0.5 */
-  -webkit-transform: rotateY(0deg) translateZ(17.5px);
+  transform: rotateY(0deg) translateZ(0.463em); /* x0.5 */
+  -webkit-transform: rotateY(0deg) translateZ(0.463em);
 }
 .logo h1 a span:nth-child(2) {
-  transform: rotateY(180deg) translateZ(17.5px); /* x0.5 */
-  -webkit-transform: rotateY(180deg) translateZ(17.5px);
+  transform: rotateY(180deg) translateZ(0.463em); /* x0.5 */
+  -webkit-transform: rotateY(180deg) translateZ(0.463em);
 }
 .logo h1 a span:nth-child(3) {
-  transform: rotateY(90deg) translateZ(17.5px); /* x0.5 */
-  -webkit-transform: rotateY(90deg) translateZ(17.5px);
+  transform: rotateY(90deg) translateZ(0.463em); /* x0.5 */
+  -webkit-transform: rotateY(90deg) translateZ(0.463em);
 }
 .logo h1 a span:nth-child(4) {
-  transform: rotateY(-90deg) translateZ(17.5px); /* x0.5 */
-  -webkit-transform: rotateY(-90deg) translateZ(17.5px);
+  transform: rotateY(-90deg) translateZ(0.463em); /* x0.5 */
+  -webkit-transform: rotateY(-90deg) translateZ(0.463em);
 }
 .logo h1 a span:nth-child(5) {
-  transform: rotateX(90deg) translateZ(17.5px); /* x0.5 */
-  -webkit-transform: rotateX(90deg) translateZ(17.5px);
+  transform: rotateX(90deg) translateZ(0.463em); /* x0.5 */
+  -webkit-transform: rotateX(90deg) translateZ(0.463em);
 }
 .logo h1 a span:nth-child(6) {
-  transform: rotateX(-90deg) translateZ(17.5px); /* x0.5 */
-  -webkit-transform: rotateX(-90deg) translateZ(17.5px);
+  transform: rotateX(-90deg) translateZ(0.463em); /* x0.5 */
+  -webkit-transform: rotateX(-90deg) translateZ(0.463em);
 }
 
 .logo h1 a {
