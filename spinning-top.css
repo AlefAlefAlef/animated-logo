@@ -17,7 +17,7 @@ body {
   padding: 13px 26px 0 0;
   box-sizing: border-box;
   animation-name: rotate;
-  animation-duration: 3s;
+  animation-duration: 0.7s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
